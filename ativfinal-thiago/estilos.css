@@ -1,0 +1,76 @@
+/* Aluno: Thiago Piffer Lauro */
+
+body{
+    margin: 0;
+    font-family: Arial;
+    text-align: justify;
+    background-color: rgb(170, 170, 170);
+}
+
+form {
+    font-size: 1.1em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+#titulo {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+#dform {
+    width: 50%;
+    margin: 2% auto;
+    height: 100%;
+    padding: 4.2%;
+    background-color: rgb(92, 91, 91);
+    border-radius: 20px;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+    padding: 5px;
+}
+
+textarea {
+    width: 80%;
+    resize: none;
+}
+
+#submissao {
+    width: 30%;
+}
+
+#envio {
+    text-align: center;
+}
+
+span {
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+#modal01 {
+    display: none;
+}
+
+#fixa {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+#ifixa {
+    width: 50%;
+    height: 50%;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-item {
+    border: none;
+}

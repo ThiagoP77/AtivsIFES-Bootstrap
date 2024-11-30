@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Aula 02</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body id="pagina">
+
+<form id="formulario" method="post" action="pagina.html">
+
+    <h1>Input Text</h1>
+    <label for="nome">Nome Completo:</label>
+    <input type="text" class="campotexto" id="nome" name="nome" size="30" maxlength="30" placeholder="Digite seu nome completo" onblur="boasVindas()">
+    <br>
+    <input type="button" id="btnome" name="btnome" value="Boas Vindas" onclick="boasVindas()">
+
+    <h1>Campo Cor</h1>
+    <label for="corfundo">Cor de Fundo:</label>
+    <input type="color" name="corfundo" id="corfundo" onchange="mudaFundo(this.value)">
+
+    <h1>Campo File</h1>
+    <label for="documento">Envio de Documento:</label>
+    <input type="file" id="documento" name="documento">
+
+    <h1>Campo Password</h1>
+    <label for="senha">Digite sua senha:</label>
+    <input type="password" id="senha" name="senha" size="10" maxlength="10">
+
+    <h1>Campo Radio</h1>
+    <label>Qual o seu sexo?</label>
+    <input type="radio" id="sexoM" name="sexo" value="M">
+    <label for="sexoM">Masculino</label>
+    <input type="radio" id="sexoF" name="sexo" value="F">
+    <label for="sexoF">Feminino</label>
+    <input type="radio" id="sexoO" name="sexo" value="O">
+    <label for="sexoO">Outro</label>
+
+    <h1>Campo Checkbox</h1>
+    <label>Quais matérias você mais gosta?</label>
+    <input type="checkbox" id="materia1" name="materia1" value="1">
+    <label for="materia1">Matemática</label>
+    <input type="checkbox" id="materia2" name="materia2" value="2">
+    <label for="materia2">Português</label>
+    <input type="checkbox" id="materia3" name="materia3" value="3">
+    <label for="materia3">Física</label>
+    <input type="checkbox" id="materia4" name="materia4" value="4">
+    <label for="materia4">Química</label>
+
+    <h1>Campo Range</h1>
+    <label for="idade">Qual a sua idade?</label>
+    <input type="range" id="idade" name="idade" onmousemove="mudaIdade(this.value)" onchange="mudaIdade(this.value)">
+    <label id="idade-texto">50</label>
+
+    <h1>Select</h1>
+    <label for="mesnascimento">Qual o seu mês de nascimento?</label>
+    <select name="mesnascimento" id="mesnascimento">
+        <option value=""></option>
+        <option value="1">Janeiro</option>
+        <option value="2">Fevereiro</option>
+        <option value="3">Março</option>
+        <option value="4">Abril</option>
+        <option value="5">Maio</option>
+        <option value="6">Junho</option>
+        <option value="7">Julho</option>
+        <option value="8">Agosto</option>
+        <option value="9">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+    </select>
+
+    <h1>Campo Textarea</h1>
+    <label for="redacao">Redação:</label>
+    <br>
+    <textarea class="campotexto" name="redacao" id="redacao" cols="50" rows="20" placeholder="Escreva uma redação de até 500 caracteres." maxlength="500"></textarea>
+
+    <h1>Campo Date</h1>
+    <label for="datanascimento">Data de Nascimento:</label>
+    <input type="date" id="datanascimento" name="datanascimento">
+
+    <h1>Campo Datetime-local</h1>
+    <label for="dhnascimento">Data e Hora de Nascimento:</label>
+    <input type="datetime-local" name="dhnascimento" id="dhnascimento">
+
+    <h1>Campo Month</h1>
+    <label for="mes">Mês de Nascimento:</label>
+    <input type="month" name="mes" id="mes">
+
+    <h1>Campo Week</h1>
+    <label for="semana">Semana da SAC:</label>
+    <input type="week" id="semana" name="semana">
+
+    <h1>Campo Time</h1>
+    <label for="hora">Hora da Aula:</label>
+    <input type="time" id="hora" name="hora">
+
+    <h1>Campo E-mail</h1>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+
+    <h1>Campo Number</h1>
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" step="0.1">
+
+    <h1>Campo Search</h1>
+    <label for="pesquisa">Pesquisar por:</label>
+    <input type="search" id="pesquisa" name="pesquisa">
+
+    <h1>Campo Tel</h1>
+    <label for="celular">Celular:</label>
+    <input type="tel" id="celular" name="celular">
+
+    <h1>Campo Url</h1>
+    <label for="url">Página Pessoal:</label>
+    <input type="url" id="url" name="url" >
+
+    <br><br>
+
+    <input type="submit" id="submissao" name="submissao" value="Salvar">
+
+</form>
+
+<script>
+function boasVindas(){
+    var nome = document.getElementById("nome").value;
+    alert("Seja bem vindo ao meu site: "+nome+"!!!");
+}
+
+function mudaFundo(cor){
+    document.getElementById("pagina").style.backgroundColor = cor;
+}
+
+function mudaIdade(idade){
+    document.getElementById("idade-texto").innerHTML = idade;
+}
+</script>
+
+</body>
+</html>

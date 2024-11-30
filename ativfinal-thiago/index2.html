@@ -1,0 +1,156 @@
+<!-- Aluno: Thiago Piffer Lauro. M13 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Humberto's Store
+                <span><img src="Imagens/Logo.png" alt="Logo da Humberto's Store"></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos e Ajuda
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Como Vencer Todas</a></li>
+                            <li><a class="dropdown-item" href="#">Terra Plana: Guia Definitivo</a></li>
+                            <li><a class="dropdown-item" href="#">Demônios nas Florestas</a></li>
+                            <li><a class="dropdown-item" href="#">Conspiacionismo Brasil</a></li>
+                            <li><a class="dropdown-item" href="#">Perigos do Flúor</a></li>
+                            <li><a class="dropdown-item" href="#">Seu Cachorro Virou um Demônio?</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Avaliações</a></li>
+                            <li><a class="dropdown-item" href="#">Doação (Manda Pix Pf)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex p-3 w-50" role="search">
+                    <input class="form-control me-2 bg-secondary" type="search" placeholder="Pesquise em Humberto's..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="dform">
+        <h1 id="titulo">FORMULÁRIO DE CONTATO</h1>
+        <br><br>
+        <form id="formulario" onsubmit="chamaModal(event)">
+            <div class="formd">
+              <label for="nome">NOME:</label>
+              <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <br>
+            <div class="formd">
+              <label for="celular">CELULAR:</label>
+              <input type="tel" class="form-control" id="celular" placeholder="Digite seu número" required>
+            </div>
+            <br>
+            <div class="formd">
+               <label for="nasc">DATA DE NASCIMENTO:</label>
+               <input type="date" class="form-control" id="nasc" required>
+            </div>
+            <br>
+            <div class="formd">
+               <label for="email">EMAIL:</label>
+               <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+            <br>
+            <div class="formd">
+                <label for="mensagem">MENSAGEM:</label>
+                <textarea class="form-control" id="mensagem" cols="30" rows="10" placeholder="Seu comentário..." maxlength="500" onkeyup="mudaSpan(this.value)" required></textarea>
+                <span id="contagem">0 de 500</span>
+            </div>
+            <br>
+            <div class="formd" id="envio">
+                <button id="submissao" type="submit" class="btn btn-dark">Enviar</button>
+            </div>
+          </form>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="modal01">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mensagem enviada com sucesso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nós da Humberto's Store agradecemos pelo feedback!</p>
+                    <p>Aguardamos mais avaliações de nosso produtos (manda Pix também pf).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fixa">
+        <img src="Imagens/Humberto.png" alt="Foto de Humberto, dono da Humberto's Store" id="ifixa">
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+
+    <script>
+
+        function chamaModal(event) {
+            event.preventDefault();
+            var modal = document.getElementById('modal01');
+            var oModal = new bootstrap.Modal(modal);
+            oModal.show();
+            document.getElementById("mensagem").value = ""
+            document.getElementById("contagem").textContent = "0 de 500"
+        };
+
+        function mudaSpan (valor) {
+            v = valor.length;
+            document.getElementById("contagem").textContent = v +" de 500"
+        }
+        
+    </script>
+
+</body>
+</html>

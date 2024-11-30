@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- Aluno: Thiago Piffer Lauro -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body id="pagina">
+    
+    <div id="topo">
+        <div id="logo">Manoel's Store</div>
+        <div><img src="manoel.png" alt="Logo da Manoel's Store"></div>
+    </div>
+
+    <div id="dform">
+        <h1 id="titulo">Formulário de Contato</h1>
+        <form id="formulario" method="post" action="pagina.html">
+            <label for="nome">Nome:</label>
+            <input type="text" class="campotexto" id="nome" name="nome" size="38" placeholder="Digite seu nome" required>
+            <br><br>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" size="26" placeholder="Digite seu número de celular" required>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" size="30" placeholder="Digite seu e-mail" required>
+            <br><br>
+
+            <label for="redacao">Mensagem:</label>
+            <br>
+            <textarea class="campotexto" name="redacao" id="redacao" cols="54" rows="10" placeholder="Seu comentário..." maxlength="300" onkeyup="mudaSpan(this.value)" required></textarea>
+            <br>
+            <span id="contagem">0 de 300</span>
+            <br><br>
+
+            <input type="submit" id="submissao" name="submissao" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+
+        function mudaSpan (valor) {
+            v = valor.length;
+            document.getElementById("contagem").textContent = v +" de 300"
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+#topo{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    margin-bottom: 30px;
+
+    display: flex;
+}
+
+#topo-esquerda{
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+
+    display: flex;
+    align-items: center;
+}
+
+#topo-direita{
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.topo-item{
+    /* border: 1px solid red; */
+    padding: 30px;
+    color: white;
+    font-size: 18px;
+}
+
+#container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+}
+
+#corpo-esquerda{
+    width: 70%;
+    /* height: 500px; */
+    /* background-color: yellow; */
+
+    display: flex;
+    justify-content: center;
+}
+
+#corpo-direita{
+    width: 30%;
+    /* height: 500px; */
+    /* background-color: green; */
+}
+
+.ce-item{
+    /* border: 1px solid red; */
+}
+
+.ce-video{
+    width: 745px;
+    height: 324px;
+    background-color: grey;
+}
+
+.ce-texto{
+    padding: 20px;
+}
+
+.cd-item{
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+}
+
+.cd-video{
+    width: 325px;
+    height: 120px;
+    background-color: grey;
+}
+
+.cd-texto{
+    padding: 10px;
+}

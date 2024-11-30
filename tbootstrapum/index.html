@@ -1,0 +1,269 @@
+<!-- Aluno: Thiago Piffer Lauro -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Humberto's Store
+                <span><img src="Imagens/Logo.png" alt=""></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos e Ajuda
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Como Vender Todas</a></li>
+                            <li><a class="dropdown-item" href="#">Terra Plana: Guia Definitivo</a></li>
+                            <li><a class="dropdown-item" href="#">Demônios nas Florestas</a></li>
+                            <li><a class="dropdown-item" href="#">Conspiacionismo Brasil</a></li>
+                            <li><a class="dropdown-item" href="#">Perigos do Flúor</a></li>
+                            <li><a class="dropdown-item" href="#">Seu Cachorro Virou um Demônio?</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Avaliações</a></li>
+                            <li><a class="dropdown-item" href="#">Doação (Manda Pix Pf)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex p-3 w-50" role="search">
+                    <input class="form-control me-2 bg-secondary" type="search" placeholder="Pesquise em Humberto's..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 mx-auto">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/VencerT.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso: Como Vencer Todas</h5>
+                        <p class="card-text">Humberto Volts irá te passar todo o conhecimento que você necessita para ser um verdadeiro vencedor e não
+                            ser enganado pelos comunistas (manda Pix Pf).
+                        </p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/TerraP.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso: Guia Definitivo da Terra Plana</h5>
+                        <p class="card-text">Aprenda tudo o que escondem de você sobre a verdadeira forma da Terra 
+                            e outros segredos assustadores (manda Pix Pf).
+                        </p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/Florestas.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso: Demônios nas Florestas</h5>
+                        <p class="card-text">Já andou pela floresta e encontrou estranhas escadas? Bem, elas escondem algo muito mais bizarro (manda Pix Pf).</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/Conspiracionismo.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso: Conspiracionismo Brasil</h5>
+                        <p class="card-text">Aprenda as principais teorias de conspiracionistas brasileiros, o será que spodem ser chamados de videntes? (manda Pix Pf).</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-4 mx-auto">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/Fluor.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso: Perigos do Flúor</h5>
+                        <p class="card-text">Conheça os perigos da contaminação e não posso revelar o método de se proteger, mas se me pagar bem... (manda Pix Pf).</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/Cachorro.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Curso: Seu Cachorro Virou Demônio?</h5>
+                        <p class="card-text">EM NENHUMA HIPÓTESE DIGA ESSAS PALAVRAS AO SEU CACHORRO (manda Pix Pf).</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/YouTube.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Canal Humberto Volts</h5>
+                        <p class="card-text">Acesse meu canal no YouTube para dicas gratuitas e conhecimento vasto, diversificado e extremamente útil (manda Pix Pf).</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="card bg-light">
+                    <img src="Imagens/Discord.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Discord</h5>
+                        <p class="card-text">Participe do Discord e adquira conhecimento e fale com o Humberto gratuitamente por apenas mil reais ao mês (manda Pix Pf).</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal01" class="btn btn-dark">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="modal01">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sair da Página</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Você deseja sair da página atual para acessar o conteúdo?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-dark">Ir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion mt-4 mx-auto w-100" id="accordionT">
+        <div class="accordion-item bg-light">
+          <h2 class="accordion-header" id="headum">
+            <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Quem é Humberto Volts?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Humberto Volts está presente no Youtube a mais de dez anos, começou a sua jornada ensinando sobre vendas online, persuasão e inteligência emocional (2012) para pessoas simples, 
+                com o tempo se especializou em relacionamento, empreendedorismo e finanças(2014), dando dicas e repassando conhecimento.
+                <br>
+                Com o passar dos anos(2016) se especializou em escatologia e arqueologia bíblica. Aprendeu sobre hebraico, aramaico, 
+                latim e grego com o foco na tradução de documentos bíblicos.
+                <br>
+                Foi a partir daí(2018) que começou a perceber que a história antiga de tribos indígenas e dos hebreus não correspondiam 
+                a história oficial contada em escolas. A partir daí começou a estudar e lecionar sobre arqueologia proibida, nefilins, hollow earth, 
+                ufos, ovnis, greys, reptilianos, inversão magnética, portais, hibridos, gigantes e tudo mais.
+                <br>
+                Com grandes acontecimentos, marcando história em 2019, 2020 e 2021 passou a lecionar sobre geopolítica, catástrofes e eventos(2019).
+                <br>
+                Hoje em 2022 leciona sobre os maiores mistérios deste mundo para mais de um milhão de pessoas mensalmente.
+                <br>
+                Sua carreira empreendedora começou em 2016 com o site compraqualificada.com que já realizou mais de vinte mil vendas, 
+                gerando alguns milhões de reais. Foi top vendas na Hotmart (150o graus celsius) com o curso como vencer todas. 
+                Já ministrou palestras e prestou consultoria empresarial sobre vendas em todo o Brasil com casos de sucesso de alunos.
+                <br>
+                Hoje seus ganhos estão concentrados no Google Adsense(milhões de pages views monetizadas), vendas de cursos(milhares de pessoas todos os anos) 
+                e investimentos em Bitcoin(position trade). 
+                <br>
+                Saiba mais em: <a href="https://humbertovolts.com/sobre/">Quem é Humberto Volts?</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-light">
+          <h2 class="accordion-header" id="headdois">
+            <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Quais são os certificados dos cursos?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Não possui certificados oficiais, mas são recomendados e bem falados pelo próprio Humberto Volts.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-light">
+          <h2 class="accordion-header" id="headtres">
+            <button class="accordion-button collapsed bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Como funciona o reembolso?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Não funciona, não admitimos políticas de reembolso.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
